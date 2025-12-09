@@ -1,0 +1,119 @@
+    header h1 {
+        font-size: 30px;
+        margin: 0
+    }
+
+
+    h2 {
+        font-size: 20px;
+    margin: 16px 0 8px
+    }
+
+/*
+nav {
+    background: #920202;
+    padding: 8px 12px;
+    gap: 16px; 
+    width: 160px
+}
+
+nav a {
+    color: #fff;
+    gap: 16px; 
+    margin-right: 12px
+}
+*/
+    main {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 0 16px
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 2rem;
+        background: #f6f7fb;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 16px;
+        justify-content: left; 
+        align-content: left;
+    }
+ 
+
+    /* legend object */
+    .legend {
+        width: 720px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        transition: box-shadow 250ms ease;
+    }
+
+    .legend:hover {
+        box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+    }
+
+    /* Hover grows the image by 20% */
+    .legend:hover .image-wrap img {
+        height: 120%;
+        width: 120%;
+        transform: scale(1.2);
+    }
+
+    /* Reveal on hover */
+    .legend:hover .details {
+        opacity: 1;
+        max-height: 1200px;
+    }
+
+    /* Image wrapper */
+    .image-wrap {
+        position: relative;
+        overflow: hidden;
+        background: #eaeaea;
+    }
+
+    .image-wrap img {
+        display: block;
+        width: 100%;
+        height: auto;
+        transform: scale(1);
+        /* initial size */
+        transition: transform 250ms ease-in-out;
+    }
+
+
+    /* Hidden details */
+    .details {
+        padding: 0.75rem 1rem 1rem;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition:
+            opacity 250ms ease,
+            max-height 300ms ease;
+    }
+
+
+
+    /* List styling */
+    .details h3 {
+        margin: 0 0 0.25rem;
+        font-size: 1rem;
+        color: #222;
+    }
+
+    .details ul {
+        margin: 0.25rem 0 0;
+        padding-left: 1.25rem;
+    }
+
+    .details li {
+        line-height: 1.25;
+    }
